@@ -31,14 +31,14 @@ export const signup = async (req, res) => {
         });
     
         if (newUser) {
-          // before CR:
-          generateToken(newUser._id, res);
-          await newUser.save();
+          // before CodeRabbit:
+          // generateToken(newUser._id, res);
+          // await newUser.save();
     
-          // after CR:
+          // after CodeRabbit:
           // Persist user first, then issue auth cookie
-        //   const savedUser = await newUser.save();
-        //   generateToken(savedUser._id, res);
+          const savedUser = await newUser.save();
+          generateToken(savedUser._id, res);
     
           res.status(201).json({
             _id: newUser._id,
