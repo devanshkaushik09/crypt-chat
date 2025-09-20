@@ -1,4 +1,6 @@
-# 💬 Real-time Chat Application
+# 💬 Real-time Chat Application [👉 **Visit App**](https://crypt-chat-13ugr.sevalla.app/)
+
+
 
 A **full-stack real-time chat application** built with **React, Node.js, Express, MongoDB, Socket.io, Tailwind CSS, and DaisyUI**.  
 It supports **JWT authentication**, real-time messaging, presence indicators, typing status, image uploads, and more — all deployed on **Sevalla**.
