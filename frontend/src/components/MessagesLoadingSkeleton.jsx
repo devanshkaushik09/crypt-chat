@@ -12,4 +12,5 @@ function MessagesLoadingSkeleton() {
     </div>
   );
 }
+// Export the MessagesLoadingSkeleton component as the default export
 export default MessagesLoadingSkeleton;

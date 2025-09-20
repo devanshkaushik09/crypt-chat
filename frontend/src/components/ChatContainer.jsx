@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import { useChatStore } from "../store/useChatStore";
 import ChatHeader from "./ChatHeader";
-import NoChatHistoryPlaceholder from "./NoChatHistoryPlaceholder";
+import NoChatHistoryPlaceHolder from "./NoChatHistoryPlaceHolder";
 import MessageInput from "./MessageInput";
 import MessagesLoadingSkeleton from "./MessagesLoadingSkeleton";
 
@@ -69,7 +69,7 @@ function ChatContainer() {
         ) : isMessagesLoading ? (
           <MessagesLoadingSkeleton />
         ) : (
-          <NoChatHistoryPlaceholder name={selectedUser.fullName} />
+          <NoChatHistoryPlaceHolder name={selectedUser.fullName} />
         )}
       </div>
 
